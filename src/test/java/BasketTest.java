@@ -130,4 +130,23 @@ public class BasketTest {
 
         assertFalse(result);
     }
+
+    @Test
+    public void basketIsFullTest() {
+        Item testItem2 = new Item();
+        Item testItem3 = new Item();
+        Item testItem4 = new Item();
+
+        testBasket.capacity = 2;
+
+        testBasket.addItem(testItem);
+        testBasket.addItem(testItem2);
+        testBasket.addItem(testItem3);
+        testBasket.addItem(testItem4);
+
+        //testBasket.checkCapacity();
+        boolean result = testBasket.isFull;
+        assertTrue(result);
+
+    }
 }

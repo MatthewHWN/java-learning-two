@@ -3,13 +3,35 @@ import java.util.Arrays;
 public class Basket {
 
     private Item[] basketContents = new Item[10];
+    public int capacity;
+    public boolean isFull = false;
+
+    public void checkCapacity() {
+//        this.isFull = this.basketContents.length >= this.capacity;
+//        System.out.println(this.basketContents.toString());
+        for(int i = 0, j = this.basketContents.length; i < j; i++) {
+            if(this.basketContents[i] == null && i >= this.capacity) {
+                this.isFull = true;
+            }
+            else {
+                this.isFull = false;
+            }
+            //return;
+        }
+    }
 
     public void addItem(Item newItem) {
-        for (int i = 0, j = this.basketContents.length; i < j; i++) {
-            if (this.basketContents[i] == null) {
-                this.basketContents[i] = newItem;
-                return;
+        this.checkCapacity();
+        if(!isFull) {
+            for (int i = 0, j = this.basketContents.length; i < j; i++) {
+                if (this.basketContents[i] == null) {
+                    this.basketContents[i] = newItem;
+                    return;
+                }
             }
+        }
+        else {
+            System.out.println("Basket is full.");
         }
     }
 
