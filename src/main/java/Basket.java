@@ -3,26 +3,20 @@ import java.util.Arrays;
 public class Basket {
 
     private Item[] basketContents = new Item[3];
+    private int itemsAdded = 0;
 
     public Basket() {}
-
-
-
-    public int capacity = 2;
+    public Basket(int capacity) {
+        this.basketContents = new Item[capacity];
+    }
     public boolean isFull = false;
 
     public void checkCapacity() {
-//        this.isFull = this.basketContents.length >= this.capacity;
-//        System.out.println(this.basketContents.toString());
-        for(int i = 0, j = this.basketContents.length; i < j; i++) {
-            if(this.basketContents[i] == null && i >= this.capacity--) {
-                this.isFull = true;
-            }
-            else {
-                this.isFull = false;
-            }
-            return;
-        }
+        this.isFull = this.itemsAdded == this.basketContents.length;
+    }
+
+    public int getCapacity() {
+        return this.basketContents.length;
     }
 
     public void addItem(Item newItem) {
@@ -31,6 +25,7 @@ public class Basket {
             for (int i = 0, j = this.basketContents.length; i <= j; i++) {
                 if (this.basketContents[i] == null) {
                     this.basketContents[i] = newItem;
+                    this.itemsAdded++;
                     return;
                 }
             }
@@ -47,8 +42,7 @@ public class Basket {
     public boolean removeItem(Item itemToRemove) {
         for (int i = 0, j = this.basketContents.length; i < j; i++) {
             try {
-                // add a null check to prevent the NullPointerException from being thrown, then refactored to use a try catch block to catch the null exception and return false.
-                if (/*this.basketContents[i] != null &&*/ this.basketContents[i].equals(itemToRemove)) {
+                if (this.basketContents[i].equals(itemToRemove)) {
                     this.basketContents[i] = null;
                     return true;
                 }

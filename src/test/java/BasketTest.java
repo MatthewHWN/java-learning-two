@@ -101,19 +101,6 @@ public class BasketTest {
         testBasket.removeItem(testItem2);
         // Assert
         assertNull(testBasket.getBasketContents()[1]);
-
-        // Arrange
-//        Item testItem2 = new Item();
-//        Item testItem3 = new Item();
-//        testBasket.addItem(testItem);
-//        testBasket.addItem(testItem2);
-//        testBasket.addItem(testItem3);
-//
-        // Act
-//        boolean result = testBasket.removeItem(testItem2);
-//
-        // Assert
-//        assertTrue(result);
     }
 
     @Test
@@ -148,5 +135,12 @@ public class BasketTest {
         boolean result = testBasket.isFull;
         assertTrue(result);
 
+    }
+
+    @Test
+    public void checkCapacityCanChange() {
+        Basket basket = new Basket(10);
+        int result = basket.getCapacity();
+        assertEquals(10, result);
     }
 }
