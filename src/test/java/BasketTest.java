@@ -1,7 +1,9 @@
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,20 +24,6 @@ public class BasketTest {
         testBasket = null;
     }
 
-//    @Disabled
-//    @Test   //this test was refactored into the one below (addItemCheckItemTest)
-//    public void addItemTest() {
-//        // Arrange
-////        Item testItem = new Item();
-////        Basket testBasket = new Basket();
-//        //Act
-//        testBasket.addItem(testItem);
-//
-//        //Assert
-//        assertEquals(1, testBasket.getBasketContents().length);
-//
-//    }
-
     @Test
     public void addItemCheckItemTest() {
         // Arrange
@@ -45,7 +33,7 @@ public class BasketTest {
         boolean result = testBasket.getBasketContents()[0].equals(testItem);
 
         // Assert
-        assertEquals(true, result);
+        assertTrue(result);
 
     }
 
@@ -58,7 +46,7 @@ public class BasketTest {
         testBasket.addItem(testItem2);
         boolean result = testBasket.getBasketContents()[1].equals(testItem2);
         //Assert
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -72,7 +60,7 @@ public class BasketTest {
         testBasket.addItem(testItem3);
         boolean result = testBasket.getBasketContents()[2].equals(testItem3);
         //Assert
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -110,11 +98,6 @@ public class BasketTest {
 
         boolean result = testBasket.removeItem(testItem4);
 
-        //This works, but we would like to get the code to avoid throwing exceptions or errors.
-        //assertThrows(NullPointerException.class, () -> {
-        //    testBasket.removeItem(testItem4);
-        //});
-
         assertFalse(result);
     }
 
@@ -123,8 +106,6 @@ public class BasketTest {
         Item testItem2 = new Item();
         Item testItem3 = new Item();
         Item testItem4 = new Item();
-
-//        testBasket.capacity = 3;
 
         testBasket.addItem(testItem);
         testBasket.addItem(testItem2);
@@ -143,4 +124,21 @@ public class BasketTest {
         int result = basket.getCapacity();
         assertEquals(10, result);
     }
+
+    @Test
+    public void notAbleToAddSameItemTwice() {
+        boolean result = testBasket.checkDuplicate(testItem,testItem);
+        assertTrue(result);
+    }
+
+    @Test
+    public void checkPrice() {
+        BigDecimal expectedOutput = new BigDecimal(2.55).setScale(2, RoundingMode.HALF_UP);
+        BigDecimal result = testItem.getPrice();
+
+        assertEquals(expectedOutput,result);
+    }
+
+
+
 }

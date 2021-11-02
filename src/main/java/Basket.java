@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class Basket {
 
@@ -23,12 +22,16 @@ public class Basket {
         this.checkCapacity();
         if(!isFull) {
             for (int i = 0, j = this.basketContents.length; i <= j; i++) {
-                if (this.basketContents[i] == null) {
-                    this.basketContents[i] = newItem;
-                    this.itemsAdded++;
-                    return;
+                if(!checkDuplicate(this.basketContents[i], newItem)) {
+                    if (this.basketContents[i] == null) {
+                        this.basketContents[i] = newItem;
+                        this.itemsAdded++;
+                        return;
+                    }
                 }
+                System.out.println(i);
             }
+            System.out.println("This is the same item");
         }
         else {
             System.out.println("Basket is full.");
@@ -51,5 +54,14 @@ public class Basket {
             }
         }
         return false;
+    }
+
+    public boolean checkDuplicate(Item inBasket, Item newItem) {
+        try {
+            return inBasket.equals(newItem);
+        } catch (NullPointerException nullPointerException) {
+            return false;
+        }
+
     }
 }
