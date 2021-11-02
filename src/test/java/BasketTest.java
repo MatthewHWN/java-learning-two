@@ -137,7 +137,7 @@ public class BasketTest {
         Item testItem3 = new Item();
         Item testItem4 = new Item();
 
-        testBasket.capacity = 2;
+//        testBasket.capacity = 3;
 
         testBasket.addItem(testItem);
         testBasket.addItem(testItem2);

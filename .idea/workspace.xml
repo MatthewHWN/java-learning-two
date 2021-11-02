@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5095d3d-c79d-4fa7-b92d-a85db018de49" name="Changes" comment="">
+    <list default="true" id="73787975-8cbf-4f61-a346-118a50fd9000" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterDir="false" />
@@ -43,11 +43,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BasketTest.addItemCheckItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-learning-two" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="addItemCheckItemTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasketTest.addItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-learning-two" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
       <option name="METHOD_NAME" value="addItemTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasketTest.addThreeItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-learning-two" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="addThreeItemsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -67,6 +87,8 @@
       <list>
         <item itemvalue="JUnit.BasketTest.basketIsFullTest" />
         <item itemvalue="JUnit.BasketTest" />
+        <item itemvalue="JUnit.BasketTest.addThreeItemsTest" />
+        <item itemvalue="JUnit.BasketTest.addItemCheckItemTest" />
         <item itemvalue="JUnit.BasketTest.addItemTest" />
       </list>
     </recent_temporary>
@@ -99,10 +121,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Basket.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
+          <line>16</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/java_learning_two$BasketTest_addItemCheckItemTest.ic" NAME="BasketTest.addItemCheckItemTest Coverage Results" MODIFIED="1635866707802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
