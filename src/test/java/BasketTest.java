@@ -28,7 +28,7 @@ public class BasketTest {
     public void addItemCheckItemTest() {
         // Arrange
         // Act
-        testBasket.addItem(testItem);
+        testBasket.addItemChecker(testItem);
 
         boolean result = testBasket.getBasketContents()[0].equals(testItem);
 
@@ -42,8 +42,8 @@ public class BasketTest {
         //Arrange
         Item testItem2 = new Item();
         //Act
-        testBasket.addItem(testItem);
-        testBasket.addItem(testItem2);
+        testBasket.addItemChecker(testItem);
+        testBasket.addItemChecker(testItem2);
         boolean result = testBasket.getBasketContents()[1].equals(testItem2);
         //Assert
         assertTrue(result);
@@ -55,9 +55,9 @@ public class BasketTest {
         Item testItem2 = new Item();
         Item testItem3 = new Item();
         //Act
-        testBasket.addItem(testItem);
-        testBasket.addItem(testItem2);
-        testBasket.addItem(testItem3);
+        testBasket.addItemChecker(testItem);
+        testBasket.addItemChecker(testItem2);
+        testBasket.addItemChecker(testItem3);
         boolean result = testBasket.getBasketContents()[2].equals(testItem3);
         //Assert
         assertTrue(result);
@@ -66,7 +66,7 @@ public class BasketTest {
     @Test
     public void removeItemTest() {
         // Arrange
-        testBasket.addItem(testItem);
+        testBasket.addItemChecker(testItem);
 
         // Act
         testBasket.removeItem(testItem);
@@ -81,9 +81,9 @@ public class BasketTest {
         // Arrange
         Item testItem2 = new Item();
         Item testItem3 = new Item();
-        testBasket.addItem(testItem);
-        testBasket.addItem(testItem2);
-        testBasket.addItem(testItem3);
+        testBasket.addItemChecker(testItem);
+        testBasket.addItemChecker(testItem2);
+        testBasket.addItemChecker(testItem3);
 
         // Act
         testBasket.removeItem(testItem2);
@@ -94,7 +94,7 @@ public class BasketTest {
     @Test
     public void removeItemNotInBasketTest() {
         Item testItem4 = new Item();
-        testBasket.addItem(testItem);
+        testBasket.addItemChecker(testItem);
 
         boolean result = testBasket.removeItem(testItem4);
 
@@ -107,10 +107,10 @@ public class BasketTest {
         Item testItem3 = new Item();
         Item testItem4 = new Item();
 
-        testBasket.addItem(testItem);
-        testBasket.addItem(testItem2);
-        testBasket.addItem(testItem3);
-        testBasket.addItem(testItem4);
+        testBasket.addItemChecker(testItem);
+        testBasket.addItemChecker(testItem2);
+        testBasket.addItemChecker(testItem3);
+        testBasket.addItemChecker(testItem4);
 
         //testBasket.checkCapacity();
         boolean result = testBasket.isFull;
@@ -141,13 +141,19 @@ public class BasketTest {
 
     @Test
     public void checkTotalSum() {
-        testBasket.addItem(new Item());
-        testBasket.addItem(new Item());
+        testBasket.addItemChecker(new Item());
+        testBasket.addItemChecker(new Item());
 
         BigDecimal result = testBasket.getTotal();
         assertEquals(new BigDecimal(5.10).setScale(2, RoundingMode.HALF_UP), result);
     }
 
+    @Test
+    public void checkThatIdsAreDifferent() {
+        Item item1 = new Item();
+        Item item2 = new Item();
 
+        assertNotEquals(item1.getID(), item2.getID());
+    }
 
 }

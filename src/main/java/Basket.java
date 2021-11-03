@@ -19,23 +19,22 @@ public class Basket {
         return this.basketContents.length;
     }
 
-    public void addItem(Item newItem) {
+    public void addItemChecker(Item newItem) {
         this.checkCapacity();
         if(!isFull) {
-            for (int i = 0, j = this.basketContents.length; i <= j; i++) {
-                if(!checkDuplicate(this.basketContents[i], newItem)) {
-                    if (this.basketContents[i] == null) {
-                        this.basketContents[i] = newItem;
-                        this.itemsAdded++;
-                        return;
-                    }
-                }
-                System.out.println(i);
-            }
-            System.out.println("This is the same item");
+            addItem(newItem);
         }
-        else {
-            System.out.println("Basket is full.");
+    }
+
+    private void addItem(Item newItem) {
+        for (int i = 0, j = this.basketContents.length; i <= j; i++) {
+            if(!checkDuplicate(this.basketContents[i], newItem)) {
+                if (this.basketContents[i] == null) {
+                    this.basketContents[i] = newItem;
+                    this.itemsAdded++;
+                    return;
+                }
+            }
         }
     }
 

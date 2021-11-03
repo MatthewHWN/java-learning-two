@@ -33,22 +33,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest.checkTotalSum">
+  <component name="RunManager" selected="JUnit.BasketTest">
     <configuration name="BasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-learning-two" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BasketTest.addItemCheckItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-learning-two" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="addItemCheckItemTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -73,6 +63,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BasketTest.checkThatIdsAreDifferent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-learning-two" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasketTest" />
+      <option name="METHOD_NAME" value="checkThatIdsAreDifferent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasketTest.checkTotalSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-learning-two" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,11 +85,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasketTest" />
+        <item itemvalue="JUnit.BasketTest.checkThatIdsAreDifferent" />
         <item itemvalue="JUnit.BasketTest.checkTotalSum" />
         <item itemvalue="JUnit.BasketTest.checkPrice" />
-        <item itemvalue="JUnit.BasketTest" />
         <item itemvalue="JUnit.BasketTest.addTwoItemsTest" />
-        <item itemvalue="JUnit.BasketTest.addItemCheckItemTest" />
       </list>
     </recent_temporary>
   </component>
