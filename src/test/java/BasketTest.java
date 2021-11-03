@@ -147,13 +147,4 @@ public class BasketTest {
         BigDecimal result = testBasket.getTotal();
         assertEquals(new BigDecimal(5.10).setScale(2, RoundingMode.HALF_UP), result);
     }
-
-    @Test
-    public void checkThatIdsAreDifferent() {
-        Item item1 = new Item();
-        Item item2 = new Item();
-
-        assertNotEquals(item1.getID(), item2.getID());
-    }
-
 }

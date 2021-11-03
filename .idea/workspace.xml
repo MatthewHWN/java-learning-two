@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="73787975-8cbf-4f61-a346-118a50fd9000" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Basket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Basket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BasketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BasketTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ItemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,22 +37,12 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest">
+  <component name="RunManager" selected="JUnit.ItemTest">
     <configuration name="BasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-learning-two" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BasketTest.addTwoItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-learning-two" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="addTwoItemsTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,13 +77,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-learning-two" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ItemTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemTest" />
         <item itemvalue="JUnit.BasketTest" />
         <item itemvalue="JUnit.BasketTest.checkThatIdsAreDifferent" />
         <item itemvalue="JUnit.BasketTest.checkTotalSum" />
         <item itemvalue="JUnit.BasketTest.checkPrice" />
-        <item itemvalue="JUnit.BasketTest.addTwoItemsTest" />
       </list>
     </recent_temporary>
   </component>
