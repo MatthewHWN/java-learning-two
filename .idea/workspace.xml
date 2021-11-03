@@ -7,7 +7,6 @@
     <list default="true" id="73787975-8cbf-4f61-a346-118a50fd9000" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Basket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Basket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BasketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasketTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Basket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Basket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BasketTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BasketTest.class" afterDir="false" />
@@ -34,7 +33,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest.checkPrice">
+  <component name="RunManager" selected="JUnit.BasketTest.checkTotalSum">
     <configuration name="BasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-learning-two" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,11 +73,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasketTest.notAbleToAddSameItemTwice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasketTest.checkTotalSum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-learning-two" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasketTest" />
-      <option name="METHOD_NAME" value="notAbleToAddSameItemTwice" />
+      <option name="METHOD_NAME" value="checkTotalSum" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,11 +85,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasketTest.checkTotalSum" />
         <item itemvalue="JUnit.BasketTest.checkPrice" />
         <item itemvalue="JUnit.BasketTest" />
         <item itemvalue="JUnit.BasketTest.addTwoItemsTest" />
         <item itemvalue="JUnit.BasketTest.addItemCheckItemTest" />
-        <item itemvalue="JUnit.BasketTest.notAbleToAddSameItemTwice" />
       </list>
     </recent_temporary>
   </component>
@@ -116,17 +115,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Basket.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/java_learning_two$BasketTest_addItemCheckItemTest.ic" NAME="BasketTest.addItemCheckItemTest Coverage Results" MODIFIED="1635866707802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

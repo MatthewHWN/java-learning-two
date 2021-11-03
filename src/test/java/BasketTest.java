@@ -139,6 +139,15 @@ public class BasketTest {
         assertEquals(expectedOutput,result);
     }
 
+    @Test
+    public void checkTotalSum() {
+        testBasket.addItem(new Item());
+        testBasket.addItem(new Item());
+
+        BigDecimal result = testBasket.getTotal();
+        assertEquals(new BigDecimal(5.10).setScale(2, RoundingMode.HALF_UP), result);
+    }
+
 
 
 }

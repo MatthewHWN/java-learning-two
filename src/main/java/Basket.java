@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 
 public class Basket {
 
@@ -63,5 +64,15 @@ public class Basket {
             return false;
         }
 
+    }
+
+    public BigDecimal getTotal() {
+        BigDecimal workingTotal = new BigDecimal(0.00);
+        for(int i = 0, j = this.basketContents.length; i < j; i++){
+            if(this.basketContents[i] != null) {
+                workingTotal = workingTotal.add(this.basketContents[i].getPrice());
+            }
+        }
+        return workingTotal;
     }
 }
